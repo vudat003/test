@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/POM/4.0.0/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Thông tin cơ bản về dự án -->
+    <groupId>com.example</groupId>
+    <artifactId>my-project</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <!-- Thông tin về dự án -->
+    <name>My Project</name>
+    <description>A simple Maven project</description>
+    <url>http://www.example.com</url>
+
+    <!-- Các thông số về phụ thuộc -->
+    <dependencies>
+        <!-- Thêm các phụ thuộc vào dự án của bạn ở đây -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.12.0</version>
+        </dependency>
+        <!-- Bạn có thể thêm nhiều phụ thuộc khác tại đây -->
+    </dependencies>
+
+    <!-- Cấu hình plugin -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+            <!-- Thêm các plugin khác nếu cần -->
+        </plugins>
+    </build>
+</project>
